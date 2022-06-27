@@ -21,4 +21,12 @@ class AddTest: XCTestCase {
     override func tearDown() {
         sut = nil
     }
+    
+    func testAdd() {
+        given(mockValidNumber.check(number: 3)) ~> true
+        given(mockValidNumber.check(number: 4)) ~> true
+        sut?.add(a: 3, b: 4)
+        verify(mockValidNumber.check(number: 3)).wasCalled()
+        verify(mockValidNumber.check(number: 4)).wasCalled()
+    }
 }
