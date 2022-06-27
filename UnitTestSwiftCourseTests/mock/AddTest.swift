@@ -63,4 +63,16 @@ class AddTest: XCTestCase {
         XCTAssertEqual(7, result)
     }
     
+    /*
+     pattern GWT
+     */
+    func testBDDPattern() {
+        // Given
+        given(mockValidNumber.check(number: 3)) ~> true
+        given(mockValidNumber.check(number: 4)) ~> true
+        // When
+        let result = sut?.add(a: 3, b: 4)
+        // Then
+        XCTAssertEqual(7, result)
+    }
 }
