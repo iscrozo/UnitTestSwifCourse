@@ -1,0 +1,14 @@
+# Files project
+Pods/
+Podfile.lock
+
+# Generated
+*.generated.swift
+
+
+# Binaries
+Pods/MockingbirdFramework/mockingbird/bin/
+
+
+# Caches
+**/*.xcodeproj/MockingbirdCache/
