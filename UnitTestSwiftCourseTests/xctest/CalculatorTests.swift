@@ -13,11 +13,32 @@ class CalculatorTests: XCTestCase {
     
     var sut: Calculator!
     
-    func testCalculatorNotNill() {
+    override func setUp() {
+        print("call setUp() CalculatorTests")
         sut = Calculator()
+    }
+    
+    override func tearDown() {
+        print("call tearDown() CalculatorTests")
+        sut = nil
+    }
+    
+    func testCalculatorNotNill() {
+        print("call testCalculatorNotNill() CalculatorTests")
         XCTAssertNotNil(sut, "SUT deberia set not nill en este punto")
     }
     
+    func testAddAssert() {
+        print("call testAddAssert() CalculatorTests")
+        // 1- arrange
+        let resultadoEsperado = 30
+        var resultadoActual: Int
+        // 2- action
+        resultadoActual = sut.add(n1: 10, n2: 20)
+        // 3- assert
+        XCTAssertEqual(resultadoActual, resultadoEsperado)
+        
+    }
 
     
 }
