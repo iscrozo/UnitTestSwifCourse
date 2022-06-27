@@ -36,6 +36,10 @@ class Calculator {
         return result
     }
     
+    func arraySquared2(numberArray: [Int] ) -> [Int] {
+        return numberArray.map{numberArray in numberArray * numberArray}
+    }
+
 }
 
 enum SomeError: Error {

@@ -105,6 +105,45 @@ class CalculatorTests: XCTestCase {
         expectedResult.append(16)
         XCTAssertEqual(numbersSquared, expectedResult, "Array al x2")
     }
+    
+    func testArraySquared2() {
+        print("call testArraySquared2() CalculatorTests")
+        // Given
+        var numbers = [Int]()
+        for n in 1...4 {
+            numbers.append(n)
+        }
+        // where
+        let numbersSquared = sut.arraySquared2(numberArray: numbers)
+        // then
+        var expectedResult = [Int]()
+        expectedResult.append(1)
+        expectedResult.append(4)
+        expectedResult.append(9)
+        expectedResult.append(16)
+        XCTAssertEqual(numbersSquared, expectedResult, "Array al x2")
+    }
+    
+    func testArraySquaredMeasure() {
+        var numbers = [Int]()
+        for n in 1...5000000 {
+            numbers.append(n)
+        }
+        self.measure {
+            sut.arraySquared(numberArray: numbers)
+        }
+    }
+    
+    func testArraySquaredMeasure2() {
+        var numbers = [Int]()
+        for n in 1...5000000 {
+            numbers.append(n)
+        }
+        self.measure {
+            sut.arraySquared2(numberArray: numbers)
+        }
+    }
+    
 }
 
 
