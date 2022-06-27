@@ -20,4 +20,17 @@ class TemperatureCalculatorTest: XCTestCase {
     override func tearDown() {
         sut = nil
     }
+    
+    func testToFarenheit() {
+        let expectedResult: Double = -9.4
+        let result = sut?.toFahrenheit(degree: -23)
+//        XCTAssertEqual(expectedResult, result, "la temperatura deberia ser igual")
+        XCTAssertEqual(expectedResult, result!, accuracy: 0.01)
+    }
+    
+    func testToDegrees() {
+        let expectedResult : Double = 25.555
+        let result = sut?.toDegrees(farenheit: 78)
+        XCTAssertEqual(expectedResult, result!, accuracy: 0.000000000000001)
+    }
 }
