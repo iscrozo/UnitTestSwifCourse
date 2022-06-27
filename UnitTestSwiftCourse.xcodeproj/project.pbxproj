@@ -20,6 +20,9 @@
 		766FD30628692432004845E4 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766FD30528692432004845E4 /* CalculatorTests.swift */; };
 		7673F51B286A45A100AFEA54 /* TemperatureCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673F51A286A45A000AFEA54 /* TemperatureCalculator.swift */; };
 		7673F51D286A461D00AFEA54 /* TemperatureCalculatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673F51C286A461D00AFEA54 /* TemperatureCalculatorTest.swift */; };
+		7673F520286A4D9900AFEA54 /* ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673F51F286A4D9900AFEA54 /* ValidNumber.swift */; };
+		7673F523286A4DF400AFEA54 /* ValidNumberTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673F522286A4DF400AFEA54 /* ValidNumberTest.swift */; };
+		7673F525286A4F3800AFEA54 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673F524286A4F3800AFEA54 /* Add.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		766FD30528692432004845E4 /* CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTests.swift; sourceTree = "<group>"; };
 		7673F51A286A45A000AFEA54 /* TemperatureCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureCalculator.swift; sourceTree = "<group>"; };
 		7673F51C286A461D00AFEA54 /* TemperatureCalculatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureCalculatorTest.swift; sourceTree = "<group>"; };
+		7673F51F286A4D9900AFEA54 /* ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidNumber.swift; sourceTree = "<group>"; };
+		7673F522286A4DF400AFEA54 /* ValidNumberTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidNumberTest.swift; sourceTree = "<group>"; };
+		7673F524286A4F3800AFEA54 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		766FD2D0286918CB004845E4 /* UnitTestSwiftCourse */ = {
 			isa = PBXGroup;
 			children = (
+				7673F51E286A4D7600AFEA54 /* mock */,
 				766FD30128692322004845E4 /* xctest */,
 				766FD2D1286918CB004845E4 /* AppDelegate.swift */,
 				766FD2D3286918CB004845E4 /* SceneDelegate.swift */,
@@ -122,6 +129,7 @@
 		766FD2E7286918CC004845E4 /* UnitTestSwiftCourseTests */ = {
 			isa = PBXGroup;
 			children = (
+				7673F521286A4DE700AFEA54 /* mock */,
 				766FD304286923E9004845E4 /* xctest */,
 				766FD2E8286918CC004845E4 /* UnitTestSwiftCourseTests.swift */,
 			);
@@ -153,6 +161,23 @@
 				7673F51C286A461D00AFEA54 /* TemperatureCalculatorTest.swift */,
 			);
 			path = xctest;
+			sourceTree = "<group>";
+		};
+		7673F51E286A4D7600AFEA54 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				7673F51F286A4D9900AFEA54 /* ValidNumber.swift */,
+				7673F524286A4F3800AFEA54 /* Add.swift */,
+			);
+			path = mock;
+			sourceTree = "<group>";
+		};
+		7673F521286A4DE700AFEA54 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+				7673F522286A4DF400AFEA54 /* ValidNumberTest.swift */,
+			);
+			path = mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +313,9 @@
 			files = (
 				766FD2D6286918CB004845E4 /* ViewController.swift in Sources */,
 				7673F51B286A45A100AFEA54 /* TemperatureCalculator.swift in Sources */,
+				7673F525286A4F3800AFEA54 /* Add.swift in Sources */,
 				766FD30328692330004845E4 /* Calculator.swift in Sources */,
+				7673F520286A4D9900AFEA54 /* ValidNumber.swift in Sources */,
 				766FD2D2286918CB004845E4 /* AppDelegate.swift in Sources */,
 				766FD2D4286918CB004845E4 /* SceneDelegate.swift in Sources */,
 			);
@@ -299,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				766FD2E9286918CC004845E4 /* UnitTestSwiftCourseTests.swift in Sources */,
+				7673F523286A4DF400AFEA54 /* ValidNumberTest.swift in Sources */,
 				7673F51D286A461D00AFEA54 /* TemperatureCalculatorTest.swift in Sources */,
 				766FD30628692432004845E4 /* CalculatorTests.swift in Sources */,
 			);

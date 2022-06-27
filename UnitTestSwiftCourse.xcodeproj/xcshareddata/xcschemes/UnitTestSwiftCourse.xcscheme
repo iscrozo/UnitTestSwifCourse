@@ -41,6 +41,9 @@
                <Test
                   Identifier = "CalculatorTests/testDisable()">
                </Test>
+               <Test
+                  Identifier = "TemperatureCalculatorTest/testToDegrees()">
+               </Test>
             </SkippedTests>
          </TestableReference>
          <TestableReference
