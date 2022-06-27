@@ -53,4 +53,14 @@ class AddTest: XCTestCase {
             then        verificar el resultado
      */
     
+    func testAAAAPattern() {
+        // Arrange
+        given(mockValidNumber.check(number: 3)) ~> true
+        given(mockValidNumber.check(number: 4)) ~> true
+        // Act
+        let result = sut?.add(a: 3, b: 4)
+        // Assert
+        XCTAssertEqual(7, result)
+    }
+    
 }
