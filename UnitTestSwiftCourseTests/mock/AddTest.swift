@@ -29,4 +29,15 @@ class AddTest: XCTestCase {
         verify(mockValidNumber.check(number: 3)).wasCalled()
         verify(mockValidNumber.check(number: 4)).wasCalled()
     }
+    
+    func testAdd2() {
+        given(mockValidNumber.check(number: any())) ~> true
+        var checkNumber: Bool = mockValidNumber.check(number: 3)
+        
+        XCTAssertEqual(true, checkNumber)
+        
+        given(mockValidNumber.check(number: -3)) ~> false
+        checkNumber = mockValidNumber.check(number: -3)
+        XCTAssertEqual(true, checkNumber)
+    }
 }
