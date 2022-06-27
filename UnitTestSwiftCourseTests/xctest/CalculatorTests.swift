@@ -80,6 +80,31 @@ class CalculatorTests: XCTestCase {
     func testDisable() {
         print("call testDisable() CalculatorTests")
     }
+    
+    func testPerfomanceExample() {
+        print("call testPerfomanceExample() CalculatorTests")
+        self.measure {
+            sut.divide(n1: 4, n2: 2)
+        }
+    }
+    
+    func testArraySquared() {
+        print("call testArraySquared() CalculatorTests")
+        // Given
+        var numbers = [Int]()
+        for n in 1...4 {
+            numbers.append(n)
+        }
+        // where
+        let numbersSquared = sut.arraySquared(numberArray: numbers)
+        // then
+        var expectedResult = [Int]()
+        expectedResult.append(1)
+        expectedResult.append(4)
+        expectedResult.append(9)
+        expectedResult.append(16)
+        XCTAssertEqual(numbersSquared, expectedResult, "Array al x2")
+    }
 }
 
 

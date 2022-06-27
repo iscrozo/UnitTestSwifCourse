@@ -28,6 +28,14 @@ class Calculator {
         return n1/n2
     }
     
+    func arraySquared(numberArray: [Int] ) -> [Int] {
+        var result = [Int]()
+        for numberArray in numberArray {
+            result.append(numberArray * numberArray)
+        }
+        return result
+    }
+    
 }
 
 enum SomeError: Error {
