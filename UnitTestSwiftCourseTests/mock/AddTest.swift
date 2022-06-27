@@ -40,4 +40,17 @@ class AddTest: XCTestCase {
         checkNumber = mockValidNumber.check(number: -3)
         XCTAssertEqual(true, checkNumber)
     }
+    
+    /*
+     protocolos
+         AAA
+             arrange    setup()
+             act        condicion
+             asset      resultado
+        GWT
+            given       setup()
+            when        accion a probar
+            then        verificar el resultado
+     */
+    
 }
