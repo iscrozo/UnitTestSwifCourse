@@ -11,5 +11,14 @@ import Mockingbird
 @testable import UnitTestSwiftCourse
 
 class AddTest: XCTestCase {
+    var sut: Add?
+    let mockValidNumber = mock(ValidNumber.self)
     
+    override func setUp() {
+        sut = Add(validBumber: mockValidNumber)
+    }
+    
+    override func tearDown() {
+        sut = nil
+    }
 }
