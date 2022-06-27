@@ -14,13 +14,19 @@ class CalculatorTests: XCTestCase {
     var sut: Calculator!
     
     func testCalculatorNotNill() {
-        // validar la instancia si es nil o nil
-//        XCTAssertNotNil(sut)
-//        XCTAssertNil(sut)
         sut = Calculator()
-        XCTAssertNotNil(sut)
-        
+        XCTAssertNotNil(sut, "SUT deberia set not nill en este punto")
     }
     
+
     
 }
+
+
+/*
+ Estandar para los test
+    func test_MethodName_StateUnderTest_ExpectedBehaviour
+    func test_Add_InputCorrect_OKResult() {
+         
+    }
+ */
