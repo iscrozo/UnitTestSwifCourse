@@ -29,6 +29,6 @@ class ValidNumberTest: XCTestCase {
     }
     
     func testCheckMore10() {
-        XCTAssertEqual(true, sut?.check(number: 10))
+        XCTAssertEqual(false, sut?.check(number: 10))
     }
 }

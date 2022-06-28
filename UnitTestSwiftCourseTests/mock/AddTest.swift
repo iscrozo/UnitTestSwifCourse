@@ -41,7 +41,7 @@ class AddTest: XCTestCase {
         
         given(mockValidNumber.check(number: -3)) ~> false
         checkNumber = mockValidNumber.check(number: -3)
-        XCTAssertEqual(true, checkNumber)
+        XCTAssertEqual(false, checkNumber)
     }
     
     /*
@@ -115,5 +115,14 @@ class AddTest: XCTestCase {
         // Then
         verify(mockPrint.showError())
         
+    }
+    
+    func testAddReturnNegative() {
+        //Given
+        given(mockValidNumber.check(number: any())) ~> false
+        //When
+        let result = sut?.add(a: 3, b: 3)
+        // THEN
+        XCTAssertEqual(result, 0)
     }
 }
