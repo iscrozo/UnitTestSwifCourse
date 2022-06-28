@@ -12,10 +12,12 @@ import Mockingbird
 
 class AddTest: XCTestCase {
     var sut: Add?
-    let mockValidNumber = mock(ValidNumber.self)
+    var mockValidNumber = mock(ValidNumber.self)
     
     override func setUp() {
-        sut = Add(validBumber: mockValidNumber)
+        sut = Add(validNumber: mockValidNumber)
+//        sut = Add(validNumber: mockValidNumber, print: mockPrint)
+
     }
     
     override func tearDown() {
@@ -75,4 +77,27 @@ class AddTest: XCTestCase {
         // Then
         XCTAssertEqual(7, result)
     }
+    
+    // arguments match
+    func testArgumentMatcher() {
+        // Given
+        given(mockValidNumber.check(number: any())) ~> true
+        // When
+        let result = sut?.add(a: 3, b: 4)
+        // Then
+        XCTAssertEqual(7, result)
+    }
+    
+    /*
+     No hay Assert para comparar
+     */
+    func testAddPrint() {
+        // Given
+        given(mockValidNumber.check(number: any())) ~> true
+        // When
+        sut?.addPrint(a: 3, b: 4)
+        // Then
+//        XCTAssertEqual(7, result)
+    }
+    
 }
