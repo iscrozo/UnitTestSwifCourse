@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005AD2F7047D15EB6393266B /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A08167B2A155FC1D30D0523 /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift */; };
 		0C526D7B2F7EAF14273CAA11 /* Pods_UnitTestSwiftCourse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5050EC8437F5C7E29E7181 /* Pods_UnitTestSwiftCourse.framework */; };
 		630637C3F847879EA1C05C40 /* Pods_UnitTestSwiftCourse_UnitTestSwiftCourseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA645C2817BC15D517F9913A /* Pods_UnitTestSwiftCourse_UnitTestSwiftCourseUITests.framework */; };
 		762150D8286A716B009E1FB0 /* PrintMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762150D7286A716B009E1FB0 /* PrintMessage.swift */; };
@@ -27,7 +28,6 @@
 		7673F520286A4D9900AFEA54 /* ValidNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673F51F286A4D9900AFEA54 /* ValidNumber.swift */; };
 		7673F523286A4DF400AFEA54 /* ValidNumberTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673F522286A4DF400AFEA54 /* ValidNumberTest.swift */; };
 		7673F525286A4F3800AFEA54 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673F524286A4F3800AFEA54 /* Add.swift */; };
-		D1282DE49E6E6E8FADE2A273 /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78011EC4B22EA87F369257BE /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift */; };
 		E7AF453644D0929CCCD33B3B /* Pods_UnitTestSwiftCourseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1FA61AE08819A36C408B86D /* Pods_UnitTestSwiftCourseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A08167B2A155FC1D30D0523 /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift"; path = "MockingbirdMocks/UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift"; sourceTree = "<group>"; };
 		37FB77CE2B49CC1807AADCDD /* Pods-UnitTestSwiftCourse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestSwiftCourse.release.xcconfig"; path = "Target Support Files/Pods-UnitTestSwiftCourse/Pods-UnitTestSwiftCourse.release.xcconfig"; sourceTree = "<group>"; };
 		39796D7AA23C67FF5E2C2453 /* Pods-UnitTestSwiftCourseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestSwiftCourseTests.debug.xcconfig"; path = "Target Support Files/Pods-UnitTestSwiftCourseTests/Pods-UnitTestSwiftCourseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		750532501322925FF047955B /* Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests.debug.xcconfig"; path = "Target Support Files/Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests/Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,7 +115,7 @@
 		680C0426541C0816C26003D2 /* Generated Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				78011EC4B22EA87F369257BE /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift */,
+				2A08167B2A155FC1D30D0523 /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift */,
 			);
 			name = "Generated Mocks";
 			sourceTree = "<group>";
@@ -499,7 +500,7 @@
 				7673F523286A4DF400AFEA54 /* ValidNumberTest.swift in Sources */,
 				7673F51D286A461D00AFEA54 /* TemperatureCalculatorTest.swift in Sources */,
 				766FD30628692432004845E4 /* CalculatorTests.swift in Sources */,
-				D1282DE49E6E6E8FADE2A273 /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift in Sources */,
+				005AD2F7047D15EB6393266B /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
