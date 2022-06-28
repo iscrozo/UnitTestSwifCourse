@@ -13,6 +13,7 @@ import Mockingbird
 class AddTest: XCTestCase {
     var sut: Add?
     var mockValidNumber = mock(ValidNumber.self)
+//    var mockPrint = mock(PrintMessage.self)
     
     override func setUp() {
         sut = Add(validNumber: mockValidNumber)
@@ -97,7 +98,7 @@ class AddTest: XCTestCase {
         // When
         sut?.addPrint(a: 3, b: 4)
         // Then
-//        XCTAssertEqual(7, result)
+        verify(mockValidNumber.check(number: 3)).wasCalled()
     }
     
 }

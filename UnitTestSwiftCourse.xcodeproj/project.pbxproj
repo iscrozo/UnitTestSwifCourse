@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C526D7B2F7EAF14273CAA11 /* Pods_UnitTestSwiftCourse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5050EC8437F5C7E29E7181 /* Pods_UnitTestSwiftCourse.framework */; };
 		630637C3F847879EA1C05C40 /* Pods_UnitTestSwiftCourse_UnitTestSwiftCourseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA645C2817BC15D517F9913A /* Pods_UnitTestSwiftCourse_UnitTestSwiftCourseUITests.framework */; };
-		762150D8286A716B009E1FB0 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762150D7286A716B009E1FB0 /* Print.swift */; };
+		762150D8286A716B009E1FB0 /* PrintMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762150D7286A716B009E1FB0 /* PrintMessage.swift */; };
 		7639D5A4286A611000EE7379 /* AddTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639D5A3286A611000EE7379 /* AddTest.swift */; };
 		766FD2D2286918CB004845E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766FD2D1286918CB004845E4 /* AppDelegate.swift */; };
 		766FD2D4286918CB004845E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766FD2D3286918CB004845E4 /* SceneDelegate.swift */; };
@@ -49,11 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A08167B2A155FC1D30D0523 /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift"; path = "MockingbirdMocks/UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift"; sourceTree = "<group>"; };
 		37FB77CE2B49CC1807AADCDD /* Pods-UnitTestSwiftCourse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestSwiftCourse.release.xcconfig"; path = "Target Support Files/Pods-UnitTestSwiftCourse/Pods-UnitTestSwiftCourse.release.xcconfig"; sourceTree = "<group>"; };
 		39796D7AA23C67FF5E2C2453 /* Pods-UnitTestSwiftCourseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestSwiftCourseTests.debug.xcconfig"; path = "Target Support Files/Pods-UnitTestSwiftCourseTests/Pods-UnitTestSwiftCourseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		750532501322925FF047955B /* Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests.debug.xcconfig"; path = "Target Support Files/Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests/Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		762150D7286A716B009E1FB0 /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		762150D7286A716B009E1FB0 /* PrintMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintMessage.swift; sourceTree = "<group>"; };
 		7639D5A3286A611000EE7379 /* AddTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTest.swift; sourceTree = "<group>"; };
 		766FD2CE286918CB004845E4 /* UnitTestSwiftCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestSwiftCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		766FD2D1286918CB004845E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +74,7 @@
 		7673F51F286A4D9900AFEA54 /* ValidNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidNumber.swift; sourceTree = "<group>"; };
 		7673F522286A4DF400AFEA54 /* ValidNumberTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidNumberTest.swift; sourceTree = "<group>"; };
 		7673F524286A4F3800AFEA54 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
-		78011EC4B22EA87F369257BE /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; lastKnownFileType = sourcecode.swift; name = "UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift"; path = "MockingbirdMocks/UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift"; sourceTree = "<group>"; };
+		78011EC4B22EA87F369257BE /* UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift"; path = "MockingbirdMocks/UnitTestSwiftCourseTests-UnitTestSwiftCourseMocks.generated.swift"; sourceTree = "<group>"; };
 		A891C5AF1ECEA37564FA26A0 /* Pods-UnitTestSwiftCourseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestSwiftCourseTests.release.xcconfig"; path = "Target Support Files/Pods-UnitTestSwiftCourseTests/Pods-UnitTestSwiftCourseTests.release.xcconfig"; sourceTree = "<group>"; };
 		B5E4392B30D58D9A21530379 /* Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests.release.xcconfig"; path = "Target Support Files/Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests/Pods-UnitTestSwiftCourse-UnitTestSwiftCourseUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA5050EC8437F5C7E29E7181 /* Pods_UnitTestSwiftCourse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestSwiftCourse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,7 +200,7 @@
 			children = (
 				7673F51F286A4D9900AFEA54 /* ValidNumber.swift */,
 				7673F524286A4F3800AFEA54 /* Add.swift */,
-				762150D7286A716B009E1FB0 /* Print.swift */,
+				762150D7286A716B009E1FB0 /* PrintMessage.swift */,
 			);
 			path = mock;
 			sourceTree = "<group>";
@@ -483,7 +482,7 @@
 				766FD2D6286918CB004845E4 /* ViewController.swift in Sources */,
 				7673F51B286A45A100AFEA54 /* TemperatureCalculator.swift in Sources */,
 				7673F525286A4F3800AFEA54 /* Add.swift in Sources */,
-				762150D8286A716B009E1FB0 /* Print.swift in Sources */,
+				762150D8286A716B009E1FB0 /* PrintMessage.swift in Sources */,
 				766FD30328692330004845E4 /* Calculator.swift in Sources */,
 				7673F520286A4D9900AFEA54 /* ValidNumber.swift in Sources */,
 				766FD2D2286918CB004845E4 /* AppDelegate.swift in Sources */,

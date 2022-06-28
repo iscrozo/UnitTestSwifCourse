@@ -10,13 +10,13 @@ import Foundation
 class Add {
     
     var validNumber: ValidNumber
-    var print: Print?
+    var print: PrintMessage?
     
-    init(validNumber: ValidNumber){
-        self.validNumber = validNumber
-    }
+//    init(validNumber: ValidNumber){
+//        self.validNumber = validNumber
+//    }
     
-    init(validNumber: ValidNumber, print: Print) {
+    init(validNumber: ValidNumber, print: PrintMessage) {
         self.validNumber = validNumber
         self.print = print
     }

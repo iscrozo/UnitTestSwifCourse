@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Print {
+class PrintMessage {
     
     func showMessage(numero: Int) {
         
